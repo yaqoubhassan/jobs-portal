@@ -1,0 +1,975 @@
+<template>
+    <header>
+      <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+        <div class="container py-3">
+          <a class="navbar-brand" href="#"><img src="./assets/logo.png" alt="" style="width: 50%;" class="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+            </ul>
+            <div class="ms-auto">
+              <a href="#" id="register-btn" class="hover-up me-5">Register</a>
+              <button class="signIn-btn">Sign In</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="main">
+      <section class="section-box pt-5">
+        <div class="banner-hero hero-2">
+          <div class="banner-inner">
+            <div class="block-banner">
+              <h1 class="text-42 color-white" style="visibility: visible; animation-name: fadeInUp;">The #1 <span
+                  class="color-green">Job Board for</span><br class="d-none d-lg-block"> Hiring or Find your next job</h1>
+              <div class="banner-description color-white mt-4" data-wow-delay=".1s"
+                style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">Each month, more than 3
+                million job seekers turn to website in their search for work, making over 140,000 applications every single
+                day
+              </div>
+              <div>
+                <form action="">
+                  <div class="container banner-search-area">
+                    <div class="row g-4">
+                      <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12">
+                        <div class="row g-4">
+                          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="input-group">
+                              <label class="input-group-text p-0" style="border: none; background-color: transparent;"
+                                for=""><i class="fa fa-briefcase search-field-icon"></i></label>
+                              <select class="form-select text-start" aria-label="Default select example"
+                                style="background-color: transparent; padding-left: 20px;">
+                                <option selected>Industry</option>
+                                <option value="1">Software</option>
+                                <option value="2">Finance</option>
+                                <option value="3">Recruting</option>
+                                <option value="4">Management</option>
+                                <option value="5">Advertising</option>
+                                <option value="6">Development</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <div class="input-group">
+                              <label class="input-group-text p-0" style="border: none; background-color: transparent;"
+                                for=""><i class="fa fa-location-dot search-field-icon"></i></label>
+                              <select class="form-select text-start" aria-label="Default select example"
+                                style="background-color: transparent; padding-left: 20px;">
+                                <option value="" selected>Location</option>
+                                <option value="AX">Aland Islands</option>
+                                <option value="AF">Afghanistan</option>
+                                <option value="AL">Albania</option>
+                                <option value="DZ">Algeria</option>
+                                <option value="AD">Andorra</option>
+                                <option value="AO">Angola</option>
+                                <option value="AI">Anguilla</option>
+                                <option value="AQ">Antarctica</option>
+                                <option value="AG">Antigua and Barbuda</option>
+                                <option value="AR">Argentina</option>
+                                <option value="AM">Armenia</option>
+                                <option value="AW">Aruba</option>
+                                <option value="AU">Australia</option>
+                                <option value="AT">Austria</option>
+                                <option value="AZ">Azerbaijan</option>
+                                <option value="BS">Bahamas</option>
+                                <option value="BH">Bahrain</option>
+                                <option value="BD">Bangladesh</option>
+                                <option value="BB">Barbados</option>
+                                <option value="BY">Belarus</option>
+                                <option value="PW">Belau</option>
+                                <option value="BE">Belgium</option>
+                                <option value="BZ">Belize</option>
+                                <option value="BJ">Benin</option>
+                                <option value="BM">Bermuda</option>
+                                <option value="BT">Bhutan</option>
+                                <option value="BO">Bolivia</option>
+                                <option value="BQ">Bonaire, Saint Eustatius and Saba</option>
+                                <option value="BA">Bosnia and Herzegovina</option>
+                                <option value="BW">Botswana</option>
+                                <option value="BV">Bouvet Island</option>
+                                <option value="BR">Brazil</option>
+                                <option value="IO">British Indian Ocean Territory</option>
+                                <option value="VG">British Virgin Islands</option>
+                                <option value="BN">Brunei</option>
+                                <option value="BG">Bulgaria</option>
+                                <option value="BF">Burkina Faso</option>
+                                <option value="BI">Burundi</option>
+                                <option value="KH">Cambodia</option>
+                                <option value="CM">Cameroon</option>
+                                <option value="CA">Canada</option>
+                                <option value="CV">Cape Verde</option>
+                                <option value="KY">Cayman Islands</option>
+                                <option value="CF">Central African Republic</option>
+                                <option value="TD">Chad</option>
+                                <option value="CL">Chile</option>
+                                <option value="CN">China</option>
+                                <option value="CX">Christmas Island</option>
+                                <option value="CC">Cocos (Keeling) Islands</option>
+                                <option value="CO">Colombia</option>
+                                <option value="KM">Comoros</option>
+                                <option value="CG">Congo (Brazzaville)</option>
+                                <option value="CD">Congo (Kinshasa)</option>
+                                <option value="CK">Cook Islands</option>
+                                <option value="CR">Costa Rica</option>
+                                <option value="HR">Croatia</option>
+                                <option value="CU">Cuba</option>
+                                <option value="CW">CuraÇao</option>
+                                <option value="CY">Cyprus</option>
+                                <option value="CZ">Czech Republic</option>
+                                <option value="DK">Denmark</option>
+                                <option value="DJ">Djibouti</option>
+                                <option value="DM">Dominica</option>
+                                <option value="DO">Dominican Republic</option>
+                                <option value="EC">Ecuador</option>
+                                <option value="EG">Egypt</option>
+                                <option value="SV">El Salvador</option>
+                                <option value="GQ">Equatorial Guinea</option>
+                                <option value="ER">Eritrea</option>
+                                <option value="EE">Estonia</option>
+                                <option value="ET">Ethiopia</option>
+                                <option value="FK">Falkland Islands</option>
+                                <option value="FO">Faroe Islands</option>
+                                <option value="FJ">Fiji</option>
+                                <option value="FI">Finland</option>
+                                <option value="FR">France</option>
+                                <option value="GF">French Guiana</option>
+                                <option value="PF">French Polynesia</option>
+                                <option value="TF">French Southern Territories</option>
+                                <option value="GA">Gabon</option>
+                                <option value="GM">Gambia</option>
+                                <option value="GE">Georgia</option>
+                                <option value="DE">Germany</option>
+                                <option value="GH">Ghana</option>
+                                <option value="GI">Gibraltar</option>
+                                <option value="GR">Greece</option>
+                                <option value="GL">Greenland</option>
+                                <option value="GD">Grenada</option>
+                                <option value="GP">Guadeloupe</option>
+                                <option value="GT">Guatemala</option>
+                                <option value="GG">Guernsey</option>
+                                <option value="GN">Guinea</option>
+                                <option value="GW">Guinea-Bissau</option>
+                                <option value="GY">Guyana</option>
+                                <option value="HT">Haiti</option>
+                                <option value="HM">Heard Island and McDonald Islands</option>
+                                <option value="HN">Honduras</option>
+                                <option value="HK">Hong Kong</option>
+                                <option value="HU">Hungary</option>
+                                <option value="IS">Iceland</option>
+                                <option value="IN">India</option>
+                                <option value="ID">Indonesia</option>
+                                <option value="IR">Iran</option>
+                                <option value="IQ">Iraq</option>
+                                <option value="IM">Isle of Man</option>
+                                <option value="IL">Israel</option>
+                                <option value="IT">Italy</option>
+                                <option value="CI">Ivory Coast</option>
+                                <option value="JM">Jamaica</option>
+                                <option value="JP">Japan</option>
+                                <option value="JE">Jersey</option>
+                                <option value="JO">Jordan</option>
+                                <option value="KZ">Kazakhstan</option>
+                                <option value="KE">Kenya</option>
+                                <option value="KI">Kiribati</option>
+                                <option value="KW">Kuwait</option>
+                                <option value="KG">Kyrgyzstan</option>
+                                <option value="LA">Laos</option>
+                                <option value="LV">Latvia</option>
+                                <option value="LB">Lebanon</option>
+                                <option value="LS">Lesotho</option>
+                                <option value="LR">Liberia</option>
+                                <option value="LY">Libya</option>
+                                <option value="LI">Liechtenstein</option>
+                                <option value="LT">Lithuania</option>
+                                <option value="LU">Luxembourg</option>
+                                <option value="MO">Macao S.A.R., China</option>
+                                <option value="MK">Macedonia</option>
+                                <option value="MG">Madagascar</option>
+                                <option value="MW">Malawi</option>
+                                <option value="MY">Malaysia</option>
+                                <option value="MV">Maldives</option>
+                                <option value="ML">Mali</option>
+                                <option value="MT">Malta</option>
+                                <option value="MH">Marshall Islands</option>
+                                <option value="MQ">Martinique</option>
+                                <option value="MR">Mauritania</option>
+                                <option value="MU">Mauritius</option>
+                                <option value="YT">Mayotte</option>
+                                <option value="MX">Mexico</option>
+                                <option value="FM">Micronesia</option>
+                                <option value="MD">Moldova</option>
+                                <option value="MC">Monaco</option>
+                                <option value="MN">Mongolia</option>
+                                <option value="ME">Montenegro</option>
+                                <option value="MS">Montserrat</option>
+                                <option value="MA">Morocco</option>
+                                <option value="MZ">Mozambique</option>
+                                <option value="MM">Myanmar</option>
+                                <option value="NA">Namibia</option>
+                                <option value="NR">Nauru</option>
+                                <option value="NP">Nepal</option>
+                                <option value="NL">Netherlands</option>
+                                <option value="AN">Netherlands Antilles</option>
+                                <option value="NC">New Caledonia</option>
+                                <option value="NZ">New Zealand</option>
+                                <option value="NI">Nicaragua</option>
+                                <option value="NE">Niger</option>
+                                <option value="NG">Nigeria</option>
+                                <option value="NU">Niue</option>
+                                <option value="NF">Norfolk Island</option>
+                                <option value="KP">North Korea</option>
+                                <option value="NO">Norway</option>
+                                <option value="OM">Oman</option>
+                                <option value="PK">Pakistan</option>
+                                <option value="PS">Palestinian Territory</option>
+                                <option value="PA">Panama</option>
+                                <option value="PG">Papua New Guinea</option>
+                                <option value="PY">Paraguay</option>
+                                <option value="PE">Peru</option>
+                                <option value="PH">Philippines</option>
+                                <option value="PN">Pitcairn</option>
+                                <option value="PL">Poland</option>
+                                <option value="PT">Portugal</option>
+                                <option value="QA">Qatar</option>
+                                <option value="IE">Republic of Ireland</option>
+                                <option value="RE">Reunion</option>
+                                <option value="RO">Romania</option>
+                                <option value="RU">Russia</option>
+                                <option value="RW">Rwanda</option>
+                                <option value="ST">São Tomé and Príncipe</option>
+                                <option value="BL">Saint Barthélemy</option>
+                                <option value="SH">Saint Helena</option>
+                                <option value="KN">Saint Kitts and Nevis</option>
+                                <option value="LC">Saint Lucia</option>
+                                <option value="SX">Saint Martin (Dutch part)</option>
+                                <option value="MF">Saint Martin (French part)</option>
+                                <option value="PM">Saint Pierre and Miquelon</option>
+                                <option value="VC">Saint Vincent and the Grenadines</option>
+                                <option value="SM">San Marino</option>
+                                <option value="SA">Saudi Arabia</option>
+                                <option value="SN">Senegal</option>
+                                <option value="RS">Serbia</option>
+                                <option value="SC">Seychelles</option>
+                                <option value="SL">Sierra Leone</option>
+                                <option value="SG">Singapore</option>
+                                <option value="SK">Slovakia</option>
+                                <option value="SI">Slovenia</option>
+                                <option value="SB">Solomon Islands</option>
+                                <option value="SO">Somalia</option>
+                                <option value="ZA">South Africa</option>
+                                <option value="GS">South Georgia/Sandwich Islands</option>
+                                <option value="KR">South Korea</option>
+                                <option value="SS">South Sudan</option>
+                                <option value="ES">Spain</option>
+                                <option value="LK">Sri Lanka</option>
+                                <option value="SD">Sudan</option>
+                                <option value="SR">Suriname</option>
+                                <option value="SJ">Svalbard and Jan Mayen</option>
+                                <option value="SZ">Swaziland</option>
+                                <option value="SE">Sweden</option>
+                                <option value="CH">Switzerland</option>
+                                <option value="SY">Syria</option>
+                                <option value="TW">Taiwan</option>
+                                <option value="TJ">Tajikistan</option>
+                                <option value="TZ">Tanzania</option>
+                                <option value="TH">Thailand</option>
+                                <option value="TL">Timor-Leste</option>
+                                <option value="TG">Togo</option>
+                                <option value="TK">Tokelau</option>
+                                <option value="TO">Tonga</option>
+                                <option value="TT">Trinidad and Tobago</option>
+                                <option value="TN">Tunisia</option>
+                                <option value="TR">Turkey</option>
+                                <option value="TM">Turkmenistan</option>
+                                <option value="TC">Turks and Caicos Islands</option>
+                                <option value="TV">Tuvalu</option>
+                                <option value="UG">Uganda</option>
+                                <option value="UA">Ukraine</option>
+                                <option value="AE">United Arab Emirates</option>
+                                <option value="GB">United Kingdom (UK)</option>
+                                <option value="US">USA (US)</option>
+                                <option value="UY">Uruguay</option>
+                                <option value="UZ">Uzbekistan</option>
+                                <option value="VU">Vanuatu</option>
+                                <option value="VA">Vatican</option>
+                                <option value="VE">Venezuela</option>
+                                <option value="VN">Vietnam</option>
+                                <option value="WF">Wallis and Futuna</option>
+                                <option value="EH">Western Sahara</option>
+                                <option value="WS">Western Samoa</option>
+                                <option value="YE">Yemen</option>
+                                <option value="ZM">Zambia</option>
+                                <option value="ZW">Zimbabwe</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                            <input class="form-control search-input" style="width: 100%;" type="text"
+                              placeholder="Your Keyword..." aria-label="default input example">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                        <div class="row">
+                          <div class="col-xl-12 col-lg-12 col-md-12">
+                            <button type="button" class="search-btn">
+                              <i class="fa fa-magnifying-glass"></i>
+                              &nbsp;Search
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="mt-3">
+                <p>
+                  <strong class="popular-searches strong-text">Popular Searches:</strong>
+                  <a class="popular-searches" href="#">Designer</a>
+                  <a class="popular-searches" href="#">Web</a>
+                  <a class="popular-searches" href="#">IOS</a>
+                  <a class="popular-searches" href="#">Developer</a>
+                  <a class="popular-searches" href="#">PHP</a>
+                  <a class="popular-searches" href="#">Senior</a>
+                  <a class="popular-searches" href="#">Engineer</a>
+                </p>
+              </div>
+              <div class="row my-5 stats">
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                  <h4>1K+</h4>
+                  <p>Daily Jobs Posted</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                  <h4>0K+</h4>
+                  <p>Recruiters</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                  <h4>2K+</h4>
+                  <p>Freelancers</p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-3 col-sm-6">
+                  <h4>1K+</h4>
+                  <p>Blog Tips</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-5" id="jobs-section">
+        <div class="container">
+          <div class="text-center">
+            <h2 style="color: #05264E; font-weight: 700; font-size: 36px;">Jobs of the Day</h2>
+            <p>Search and connect with the right candidates faster.</p>
+  
+            <div class="list-tabs mt-4 center-align">
+              <ul class="nav nav-tabs ms-auto me-auto">
+                <li><a class="" id="nav-tab-job-1" href="#tab-job-1" data-bs-toggle="tab" role="tab"
+                    aria-controls="tab-job-1" aria-selected="false"><img src="./assets/management.svg" alt="jobBox">
+                    Management</a>
+                </li>
+                <li><a id="nav-tab-job-2" href="#tab-job-2" data-bs-toggle="tab" role="tab" aria-controls="tab-job-2"
+                    aria-selected="false" class=""><img src="./assets/marketing.svg" alt="jobBox"> Marketing
+                    &amp; Sale</a></li>
+                <li><a id="nav-tab-job-3" href="#tab-job-3" data-bs-toggle="tab" role="tab" aria-controls="tab-job-3"
+                    aria-selected="false" class=""><img src="./assets/finance.svg" alt="jobBox"> Finance</a>
+                </li>
+                <li><a id="nav-tab-job-4" href="#tab-job-4" data-bs-toggle="tab" role="tab" aria-controls="tab-job-4"
+                    aria-selected="false" class=""><img src="./assets/human.svg" alt="jobBox"> Human
+                    Resource</a></li>
+                <li><a id="nav-tab-job-5" href="#tab-job-5" data-bs-toggle="tab" role="tab" aria-controls="tab-job-5"
+                    aria-selected="false" class=""><img src="./assets/retail.svg" alt="jobBox"> Retail &amp;
+                    Products</a></li>
+                <li><a id="nav-tab-job-6" href="#tab-job-6" data-bs-toggle="tab" role="tab" aria-controls="tab-job-6"
+                    aria-selected="true" class="active"><img src="./assets/content.svg" alt="jobBox">
+                    Content Writer</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <div style="height: 700px"></div>
+  
+  
+    </main>
+  </template>
+  
+  <script>
+  // const nav = document.querySelector('nav');
+  
+  // window.addEventListener('scroll', function() {
+  //   const offset = window.pageYOffset;
+    
+  //   if(offset > 75)
+  //     nav.classList.add('scroll')
+  //   else 
+  //     nav.classList.remove('scroll')
+  // });
+  
+  document.addEventListener('DOMContentLoaded', function () {
+    // window.onscroll = function() {myFunction()};
+    window.addEventListener('scroll', myFunction);
+  
+    var navbar = document.getElementById("nav");
+    var sticky = navbar.offsetTop;
+  
+    function myFunction() {
+      if (window.pageYOffset > 75) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+  })
+  </script>
+  
+  <style>
+  
+  .navbar {
+    background-color: #FFFF;
+    /* border-bottom: 1px solid rgb(238, 236, 236); */
+    box-shadow: 0px 20px 120px -30px gray;
+    /* transition: all ease .65s; */
+    /* z-index: 100; */
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    visibility: visible;
+    /* width: 100%; */
+    background-color: #FFFF;
+    padding: 10px;
+    animation-name: example;
+    animation-duration: 3s;
+    animation-delay: -2s;
+  }
+  
+  @keyframes example {
+    0%   {visibility: hidden;}
+    25%  {visibility: visible; background-color:white; opacity: 0.25; padding-top: 0px;}
+    50%  {visibility: visible; background-color:white; opacity: 0.5; padding-top: 4px;}
+    75%  {visibility: visible; background-color:white; opacity: 0.75; padding-top: 7px;}
+    100% {visibility: visible; background-color:white; opacity: 1; padding-top: 10px;}
+  }
+  
+  /* nav.scroll {
+    padding: 0px;
+    background: black;
+    position: fixed;
+  } */
+  body {
+    background-color: #FFFFFF;
+    /* font-family: "Plus Jakarta Sans", sans-serif; */
+  }
+  
+  .nav-item {
+    margin: 0px 10px;
+  }
+  
+  .nav-link {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #05264E;
+    display: block;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .nav-link:hover {
+    color: #3C65F5;
+    border-bottom: 3px solid #3C65F5;
+    padding-bottom: 1px;
+  }
+  
+  #register-btn {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #05264E;
+    display: inline-block;
+    position: relative;
+    text-decoration-line: underline;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+  }
+  
+  #register-btn:hover {
+    top: -2px;
+    color: #3C65F5;
+  }
+  
+  .signIn-btn {
+    color: #ffffff;
+    background-color: #3C65F5;
+    line-height: 26px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 14px;
+    /* margin-left: 40px !important; */
+    border: 1px solid transparent;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+  }
+  
+  .signIn-btn:hover {
+    top: -2px;
+    background-color: #05264E;
+  }
+  
+  .search-btn {
+    color: #ffffff;
+    background-color: #3C65F5;
+    font-size: 14px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px 5px;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+    width: 100%;
+  }
+  
+  .search-btn:hover {
+    top: -2px;
+    background-color: #05264E;
+  }
+  
+  .section-box {
+    display: inline-block;
+    width: 100%;
+    overflow: visible;
+  }
+  
+  .banner-hero.hero-2 {
+    position: relative;
+    width: 100%;
+    padding: 100px 0px 80px 0px;
+    max-width: 100%;
+    background: url('./assets/banner.png') no-repeat top center;
+    background-size: cover;
+  }
+  
+  .banner-hero.hero-2::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: #05264E;
+    opacity: 0.8;
+    z-index: 1;
+  }
+  
+  .banner-hero.hero-2 .banner-inner {
+    z-index: 2;
+    position: relative;
+    max-width: 725px;
+    margin: auto;
+    width: 100%;
+  }
+  
+  .banner-hero .banner-inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .banner-hero.hero-2 .banner-inner .block-banner {
+    padding: 0px;
+    text-align: center;
+  }
+  
+  .banner-hero .block-banner {
+    position: relative;
+    z-index: 12;
+  }
+  
+  .text-42 {
+    font-size: 42px;
+    line-height: 53px;
+    font-weight: 700;
+  }
+  
+  .color-white {
+    color: #ffffff !important;
+  }
+  
+  .color-green {
+    color: #85FF83;
+  }
+  
+  .banner-description {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-style: normal;
+  }
+  
+  .banner-hero .block-banner .form-find {
+    background: #ffffff;
+    box-shadow: 0px 18px 40px rgb(25 15 9 / 10%);
+    border-radius: 8px;
+    display: inline-block;
+    width: 100%;
+    padding: 10px 10px;
+  }
+  
+  .banner-hero .block-banner .form-find form {
+    display: flex;
+    width: 100%;
+  }
+  
+  .banner-hero .block-banner .form-find .box-industry {
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .banner-hero .block-banner .form-find .input-industry {
+    background: url('./assets/icon-job.svg') no-repeat left 18px center;
+  }
+  
+  .banner-hero .block-banner .form-find .form-input {
+    border: 0px solid rgba(26, 15, 9, 0.1);
+    border-radius: 0px;
+    padding: 10px 20px 10px 34px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .select2-hidden-accessible {
+    border: 0 !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    /* position: absolute !important;
+    /* width: 100% ; */
+    width: 1px !important;
+    white-space: nowrap !important;
+  }
+  
+  option {
+    background: #fff;
+    border: 0px solid #626262;
+    padding-left: 10px;
+    font-size: 16px;
+  }
+  
+  .banner-hero.hero-2 .banner-inner .block-banner .form-find .select2 {
+    text-align: left;
+  }
+  
+  .banner-hero .block-banner .form-find .select2 {
+    border: 0px solid rgba(26, 15, 9, 0.1);
+    border-radius: 0px;
+    padding: 10px 20px 10px 30px;
+    display: inline-block;
+    width: 100% !important;
+    margin-right: 10px;
+    position: relative;
+    max-width: 180px;
+  }
+  
+  .select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 28px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .banner-hero .block-banner .form-find .box-industry .select2::before {
+    content: "";
+    background: url('./assets/industry.svg') no-repeat;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 11px;
+    top: 15px;
+  }
+  
+  .banner-hero .block-banner .form-find .select2::before {
+    content: "";
+    background: url('./assets/location.svg') no-repeat;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 11px;
+    top: 15px;
+  }
+  
+  .select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #4F5E64;
+    line-height: 26px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 14px;
+  }
+  
+  .select2-container .select2-selection--single .select2-selection__rendered {
+    display: block;
+    padding-left: 8px;
+    padding-right: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .banner-hero .block-banner .form-find .select2 .select2-selection__arrow {
+    background: url('./assets/arrow-down.svg') no-repeat right 10px center;
+    top: 11px;
+    width: 26px;
+  }
+  
+  .select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 26px;
+    position: absolute;
+    /* top: 1px; */
+    right: 1px;
+    /* width: 20px; */
+  }
+  
+  .form-find {
+    margin-top: 40px;
+  }
+  
+  .banner-hero .block-banner .form-find .select2 .select2-selection__arrow b {
+    display: none !important;
+    background-color: #9777fa;
+  }
+  
+  .banner-hero .block-banner .form-find .select2::after {
+    content: "";
+    height: 18px;
+    width: 1.4px;
+    border-radius: 5px;
+    background-color: #B4C0E0;
+    position: absolute;
+    top: 16px;
+    right: -3px;
+  }
+  
+  .banner-hero .block-banner .form-find .input-keysearch {
+    background: url('./assets/key-numbers.svg') no-repeat left 10px center;
+  }
+  
+  .banner-hero .block-banner .form-find .form-input {
+    border: 0px solid rgba(26, 15, 9, 0.1);
+    border-radius: 0px;
+    padding: 10px 20px 10px 34px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .banner-hero .block-banner .form-find .btn-find {
+    min-width: 122px;
+    padding-left: 34px;
+    padding-right: 15px;
+    background-image: url('./assets/search-icon.svg');
+    background-repeat: no-repeat;
+    background-position: left 19px top 18px;
+  }
+  
+  .btn.btn-default {
+    color: #ffffff;
+    background-color: #3C65F5;
+    line-height: 26px;
+    padding: 10px 25px;
+  }
+  
+  .btn {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    border-radius: 8px;
+    padding: 13px 25px;
+    font-size: 14px;
+    line-height: 1;
+    transition: 0.2s;
+    position: relative;
+    top: 0;
+    transition: top ease 0.3s;
+  }
+  
+  #btn-animation:hover {
+    top: -2px;
+    background-color: #05264E;
+  }
+  
+  .font-sm {
+    font-weight: 500;
+    font-size: 14px !important;
+    line-height: 22px !important;
+  }
+  
+  input:focus::-moz-placeholder {
+    opacity: 0;
+    -moz-transition: 0.4s;
+    transition: 0.4s;
+  }
+  
+  input:focus {
+    box-shadow: none !important;
+    outline: none !important;
+  }
+  
+  .banner-search-area {
+    background-color: #FFFFFF;
+    width: 100%;
+    padding: 10px 10px;
+    margin-top: 40px;
+    border-radius: 5px;
+  }
+  
+  .search-input,
+  .form-select {
+    border: none;
+    width: 100%;
+  }
+  
+  .form-select:focus {
+    border: none;
+    box-shadow: none !important;
+  }
+  
+  select:hover {
+    cursor: pointer;
+  }
+  
+  /* select:focus > option:checked { 
+      background: #000 !important;
+  } */
+  
+  select.decorated option:hover {
+    box-shadow: 0 0 10px 100px #1882A8 inset;
+  }
+  
+  option:hover {
+    background-color: yellow;
+  }
+  
+  /* option:focus {
+    background-color: #05264E;
+  } */
+  
+  .search-field-icon {
+    color: #b1afaf;
+  }
+  
+  .popular-searches {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0px 5px;
+  }
+  
+  @media (min-width: 576px) {
+    .offset-sm-4 {
+      margin-left: 0px;
+    }
+  }
+  
+  @media (max-width:768px) {
+    .search-btn {
+      max-width: 50%;
+      width: 30%;
+    }
+  
+    .strong-text {
+      display: block
+    }
+  }
+  
+  .stats h4 {
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: .2rem;
+  }
+  
+  .stats p {
+    color: #A0ABB8;
+  }
+  
+  #jobs-section p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    color: #66789C;
+  }
+  
+  .center-align {
+      /* float: center !important; */
+      margin-left: 40px;
+  }
+  
+  .nav-tabs li {
+    /* display: inline; */
+    margin: auto;
+  }
+  
+  .nav-tabs li a {
+    display: block;
+    margin: 0px 5px;
+    box-shadow: 0px 2px 4px -5px rgb(10 42 105);
+    align-items: center;
+    padding: 13px 17px;
+    width: auto;
+    background: #ffffff;
+    border: 1px solid #E0E6F7;
+    border-radius: 8px;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 18px;
+    text-align: left;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #05264E;
+  }
+  
+  .nav-tabs li a:hover {
+    border: 1px solid #3C65F5;
+  }
+  
+  #nav-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  * {
+      margin: 0;
+      padding: 0;
+  }
+  /* .input-group {
+    border-right: 1px solid #b1afaf;
+  } */
+  </style>
+  
