@@ -492,6 +492,7 @@ img {
     text-transform: capitalize;
     display: block;
     text-align: center;
+    float: right
 }
 
 .apply-btn:hover {
